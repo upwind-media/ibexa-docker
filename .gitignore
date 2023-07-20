@@ -1,0 +1,14 @@
+.php~
+.idea
+.DS_Store
+*~
+*.bak
+._*
+~*
+.php_cs.cache
+.sflaunchpad.local.yml
+/*.bash
+/data/*
+!/data/.gitkeep
+!/data/ibexa.sql.gz
+/ezplatform/

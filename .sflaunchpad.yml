@@ -1,0 +1,15 @@
+provisioning:
+    folder_name: docker
+    project_folder_name: ibexa
+docker:
+    compose_filename: docker-compose.yml
+    network_name: ibexa
+    network_prefix_port: 0
+    main_container: ibexa
+    storage_dirs:
+        storage: ibexa/public/var
+    variables:
+        APP_CACHE_DIR: /tmp/ibexacache/
+        APP_LOG_DIR: /tmp/ibexalogs/
+        RUNNING_ENV: docker
+        XDEBUG_ENABLED: false
