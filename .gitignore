@@ -11,4 +11,6 @@
 /data/*
 !/data/.gitkeep
 !/data/ibexa.sql.gz
-/ezplatform/
+/docker/dev/solr/server/ibexa/collection1
+/docker/dev/solr/server/ibexa/filestore
+/docker/dev/solr/server/ibexa/userfiles
