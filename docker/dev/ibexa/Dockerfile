@@ -1,4 +1,4 @@
-FROM sklimaszewski/php-symfony:8.1-fpm-mysql
+FROM sklimaszewski/php:8.1-mysql
 
 ENV XDEBUG_ENABLED=0
 

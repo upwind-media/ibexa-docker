@@ -64,11 +64,11 @@ services:
         ports:
             - '${PROJECTPORTPREFIX}306:3306'
     varnish:
-        image: plopix/docker-varnish6
+        image: sklimaszewski/varnish:6.0
         depends_on:
             - nginx
         volumes:
-            - '${PROJECTCOMPOSEPATH}/${PROVISIONINGFOLDERNAME}/dev/varnish/varnish.vcl:/etc/varnish/default.vcl:ro'
+            - '${PROJECTCOMPOSEPATH}/${PROVISIONINGFOLDERNAME}/dev/varnish/varnish.vcl:/etc/varnish/default.vcl'
         ports:
             - '${PROJECTPORTPREFIX}082:80'
     solr-initializer:
@@ -109,7 +109,7 @@ services:
         depends_on:
             - ibexa
     redisadmin:
-        image: 'rediscommander/redis-commander:latest'
+        image: 'spryker/redis-commander:0.8.0'
         environment:
             - REDIS_HOST=redis
         ports:
