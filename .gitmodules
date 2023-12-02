@@ -1,0 +1,3 @@
+[submodule "ibexa"]
+	path = ibexa
+	url = git@github.com:ibexa/oss-skeleton.git
