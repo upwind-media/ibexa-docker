@@ -23,7 +23,7 @@ sudo mv ~/sf /usr/local/bin/sf
 
 * Clone this repository and enter directory:
 ```bash
-git clone git@github.com:upwind-media/ibexa-docker.git
+git clone --recurse-submodules git@github.com:upwind-media/ibexa-docker.git
 cd ibexa-docker/
 ```
 
