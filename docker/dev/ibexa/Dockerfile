@@ -1,4 +1,4 @@
-FROM sklimaszewski/php:8.1-mysql
+FROM sklimaszewski/php:8.3-mysql
 
 ENV XDEBUG_ENABLED=0
 
